@@ -1,6 +1,0 @@
-title: New HCP Portal Page
-templateScript: /hcp-portal/templates/pages/newnewpage.ftl
-renderType: freemarker
-dialog: hcp-portal:pages/newnewpage
-visible: true
-

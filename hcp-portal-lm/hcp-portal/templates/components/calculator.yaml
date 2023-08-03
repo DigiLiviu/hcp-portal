@@ -1,0 +1,4 @@
+title: calculator
+renderType: freemarker
+templateScript: /hcp-portal/templates/components/calculator.ftl
+dialog: hcp-portal:components/calculator

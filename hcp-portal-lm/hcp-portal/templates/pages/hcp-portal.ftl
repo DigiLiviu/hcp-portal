@@ -8,6 +8,10 @@
     <meta name="description" content="${content.description!""}" />
     <meta name="keywords" content="${content.keywords!""}" />
 
+    <link rel="stylesheet" type="text/css" href="${ctx.contextPath}/.resources/hcp-portal/webresources/css/hcp-portal.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="${ctx.contextPath}/.resources/hcp-portal/webresources/js/calculator.js"></script>
+
     [#-- To load resources you can link them manually (e.g. line below) --]
       [#-- <link rel="stylesheet" type="text/css" href="${ctx.contextPath}/.resources/hcp-portal/webresources/css/bootstrap.css" media="all" /> --]
       [#-- <script src="${ctx.contextPath}/.resources/hcp-portal/webresources/js/jquery.js"></script> --]
@@ -26,18 +30,12 @@
       [#-- ${resfn.css(["/hcp-portal/.*css"])!} --]
   </head>
   <body class="hcp-portal ${cmsfn.language()}">
-    <header>
-     <!-- render links to all pages on "level 1" -->
-[#assign navParentItem = navfn.rootPage(content)!]
-[#if navParentItem??]
-  [#assign navItems = navfn.navItems(navParentItem)]
-  [#list navItems as navItem]
-      <a href="${cmsfn.link(navItem)!}">${navItem.navigationTitle!navItem.title!navItem.@name}</a> |
-  [/#list]
-[/#if]
-    </header>
+
     <div class="container">
       <h1>hcp-portal works!</h1>
+    </div>
+    <div class="main">
+      [@cms.area name="main" /]
     </div>
 
     [#-- use resfn to load all js which matches the globbing pattern or link resources manually or via theme --]

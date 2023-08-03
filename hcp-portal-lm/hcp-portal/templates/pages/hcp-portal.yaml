@@ -1,6 +1,10 @@
-title: HCP Portal
+title: hcp-portal
 templateScript: /hcp-portal/templates/pages/hcp-portal.ftl
 renderType: freemarker
 dialog: hcp-portal:pages/hcp-portal
 visible: true
-
+areas:
+  main:
+    availableComponents:
+      calculator:
+        id: hcp-portal:components/calculator

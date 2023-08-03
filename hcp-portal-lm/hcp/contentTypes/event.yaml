@@ -1,0 +1,15 @@
+datasource:
+  workspace: events
+  namespaces:
+    hcp: https://www.hcp-portal.com/jcr/1.0/mt
+  autoCreate: true
+
+model:
+  nodeType: hcp:event
+  properties:
+    - name: name
+    - name: date
+      type: Date
+    - name: description
+      type: richtext
+    - name: link

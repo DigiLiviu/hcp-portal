@@ -1,0 +1,6 @@
+title: HCP Portal
+templateScript: /hcp-portal/templates/pages/hcp-portal.ftl
+renderType: freemarker
+dialog: hcp-portal:pages/hcp-portal
+visible: true
+

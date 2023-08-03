@@ -1,0 +1,6 @@
+title: newpage
+templateScript: /hcp/templates/pages/newpage.ftl
+renderType: freemarker
+dialog: hcp:pages/newpage
+visible: true
+
